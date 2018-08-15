@@ -15,6 +15,7 @@ class LayoutComponet extends Component {
         this.props.history.push(item.key);
     }
     render() {
+        const  {body} = this.props;
         return (
             <Layout>
                 <Sider style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}>
@@ -35,7 +36,8 @@ class LayoutComponet extends Component {
                     <Header style={{ background: '#fff', padding: 0 }} />
                     <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
                         <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
-                        {this.props.body}
+                                hello
+                              {body}
                         </div>
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>

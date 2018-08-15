@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Loadable from 'react-loadable';
+
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import LayoutCompoent from './Layout'
 import './App.css';
@@ -18,9 +19,9 @@ const Songs = Loadable({
 })
 
 // 布局
-const Warper = page => {
+const Warper = Page => {
   return () => {
-    return  <LayoutCompoent body={page} />
+    return  <LayoutCompoent body={<Page/>} />
   }
 }
 class App extends Component {
